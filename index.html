@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <title>DevJobs Job Board</title>
+  <script>
+    const toggle = document.getElementById('modeToggle');
+    const body = document.body;
+
+    toggle.addEventListener('change', function () {
+      body.classList.toggle('dark-mode');
+    });
+
+  </script>
+</head>
+
+<body>
+  <script src="script3.js"></script>
+  <nav>
+    <div class="header">
+      <img src="logo.svg" alt="devjobs" srcset="">
+      <div class="toggle">
+        <img src="icon-sun.svg" alt="light-mode" srcset="">
+        <div class="toggle-btn">
+          <input type="checkbox" id="modeToggle">
+          <label for="modeToggle"></label>
+        </div>
+        <img src="icon-moon.svg" alt="dark-mode" srcset="">
+      </div>
+    </div>
+
+    <script>
+      const toggle = document.getElementById('modeToggle');
+      const body = document.body;
+
+      toggle.addEventListener('change', function () {
+        body.classList.toggle('dark-mode');
+      });
+
+    </script>
+
+    <div class="nav-items">
+      <ul>
+        <li class="endborder"><input type="search" id="name-filter" placeholder="Filter by companies, expertise...">
+        </li>
+        <li class="endborder"><input type="search" id="loc-filter" placeholder="Filter by location..."></li>
+        <li style="padding-left: 0; margin-top: 7px;"><input type="checkbox" name="checkbox">
+          <label for="checkbox" style="color: black; background: none;">Full Time Only</label>
+        </li>
+        <input type="button" value="Search" class="searchbtn"
+          style="background: rebeccapurple; border-radius: 10px; width: 80px; color: #fff; height: 30px; margin-top: 10px; padding-top: 7px; border: none;">
+      </ul>
+    </div>
+  </nav>
+
+  <br><br><br><br>
+
+  <div class="container">
+    <div class="jobs" id="jobs">
+      <!--Job listings are populated here from Javascript-->
+    </div>
+  </div>
+
+  <div class="load">
+    <button>Load More</button>
+    <script src="script.js"></script>
+  </div>
+</body>
+
+</html>

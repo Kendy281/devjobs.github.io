@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevJobs Job Board</title>
+</head>
+<body>
+    <script src="jobpage.js"></script>
+    <nav>
+    <div class="header">
+            <img src="logo.svg" alt="devjobs" srcset="">
+            <div class="toggle">
+                <img src="icon-sun.svg" alt="light-mode" srcset="">
+            <div class="toggle-btn">
+                <input type="checkbox" id="modeToggle">
+                <label for="modeToggle"></label>
+              </div>
+                <img src="icon-moon.svg" alt="dark-mode" srcset="">
+            </div>
+    </div>
+
+    <!--Name of company and logo goes here-->
+    <div class="nav-items" style="padding: 0; height: 0;" >
+        <div class="nav-items2" id="jobDetails" >
+        <!--Select data from json file-->
+        </div>
+    </div>
+    </nav>
+
+<br><br><br><br>
+   
+<div class="jobdet" id="jobRequirement">
+    <div class="jobs" id="jobDetail">
+        <!--Job listings are populated here from Javascript-->
+    </div>
+</div>
+
+<footer id="footer" class="foot"></footer>
+
+</body>
+</html>

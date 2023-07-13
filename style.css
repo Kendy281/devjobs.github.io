@@ -1,0 +1,327 @@
+* {
+  /* background-color: #F4F6F8; */
+  padding-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.dark-mode {
+  background-color: black;
+  background: black;
+}
+
+.header {
+  padding: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('bg-pattern-header.svg');
+  background-size: cover;
+  height: 100px;
+}
+
+.header img {
+  background: none;
+}
+
+/* Start of Nav Section design */
+
+
+.nav-items {
+  background-color: #fff;
+  color: #fff;
+  width: 80%;
+  margin: -50px auto;
+  border-radius: 5px;
+  padding-bottom: 0;
+  padding-top: 0;
+  height: 56px;
+  padding-right: 2px;
+  padding-left: 0;
+}
+
+.nav-items2 {
+  background-color: #fff;
+  color: #fff;
+  width: 80%;
+  margin: -50px auto;
+  border-radius: 5px;
+  padding-bottom: 0;
+  padding-top: 0;
+  height: 56px;
+  padding-right: 2px;
+  padding-left: 0;
+}
+
+.nav-items ul {
+  background: none;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-items ul li {
+  display: inline-block;
+  padding: 10px 30px;
+  padding-left: 0;
+  margin-left: 0;
+  background: none;
+  width: 15%;
+  margin-bottom: 0;
+}
+
+/* only items with a sideline separating it */
+.endborder {
+  border-right: 1px solid gray;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* end */
+
+
+.nav-items ul li input {
+  background: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+}
+
+.searchbtn {
+  background: rebeccapurple;
+  border-radius: 10px;
+  width: 80px;
+  color: #fff;
+  height: 30px;
+  margin-top: 10px;
+  padding-top: 7px;
+  border: none;
+}
+
+.searchbtn:hover {
+  scale: 1.2;
+  transition: 0.5s;
+  cursor: pointer;
+  background: #939BF4;
+}
+
+.nav-items2 {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.company-name {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+
+/* End of Nav Section */
+
+.jobs {
+  width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+}
+
+.jobdet {
+  margin-top: 300px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+}
+
+#jobRequirement {
+  margin-top: 10%;
+}
+
+
+
+.jobitem {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 0px(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+}
+
+.jobitem:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.4s;
+}
+
+
+.brand-logo {
+  width: 60px;
+  height: 40px;
+  margin-top: -15%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.brand-logo img {
+  background: none;
+  width: 20px;
+}
+
+.jobitem a {
+  text-decoration: none;
+  color: #000;
+  background: none;
+}
+
+.jobitem p {
+  background: none;
+  font-family: sans-serif;
+}
+
+span {
+  background: none;
+}
+
+.loc {
+  color: blueviolet;
+  font-family: sans-serif;
+  background: none;
+}
+
+/* Load More button at bottom of page */
+
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load button {
+  background-color: #6752b5;
+  color: #fff;
+  border-radius: 3px;
+  border-style: none;
+  padding: 10px;
+}
+
+.load button:hover {
+  cursor: pointer;
+  scale: 1.3;
+  transition: 0.5s;
+}
+
+/* End of Load More button design */
+
+/* code for toggling button */
+
+.toggle {
+  background: none;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.toggle-btn input {
+  display: none;
+}
+
+.toggle-btn label {
+  display: block;
+  width: 60px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn label:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #939BF4;
+  top: 5px;
+  left: 5px;
+  transition: left 0.3s ease;
+}
+
+.toggle-btn input:checked+label {
+  background-color: #fff;
+}
+
+.toggle-btn input:checked+label:after {
+  left: 30px;
+}
+
+
+
+
+
+/* footer section */
+
+.foot {
+  background: #fff;
+  padding-left: 20%;
+  padding-top: 20px;
+}
+
+.apply-button {
+  background: #fff;
+  display: inline;
+  margin-right: 0;
+  margin-left: 55%;
+  margin-top: 0;
+}
+
+.apply-button button {
+  border: none;
+  border-radius: 5px;
+  background: #6752b5;
+  padding: 10px;
+}
+
+.apply-button button a {
+  background: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* End of toggling button code */
+
+/*
+  .card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  */
+
+body.dark-mode {
+  background-color: #000;
+}
