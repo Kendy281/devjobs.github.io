@@ -7,7 +7,7 @@ fetch('data.json')
     var container = document.getElementById('jobs');
     var originalJobs = data;
     var visibleJobs = 6; // Number of jobs initially visible
-    var loadMoreButton = document.querySelector('.load button');
+    var loadMoreButton = document.getElementsByClassName('load button');
 
     function displayJobs(jobs) {
       container.innerHTML = '';
